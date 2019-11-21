@@ -30,18 +30,43 @@
         <div class="col-md-2">
           <aside class="filters">
             <div class="panel panel-default">
-              <div class="panel-heading">Filter Search</div>
+              <div class="panel-heading"> Filter Search</div>
               <div class="panel-body">
                 <form>
                   <div class="form-group">
                     <ul class="list-group" id="filters">
                       <li class="filter list-group-item">
+                        <div>
+                          <button id="filter-btn6" type="button" class="btn-default"><b>Reset Table</b></button>
+                        </div>
+                        <br>
                         <label for="date">Enter a Date</label>
-                        <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
+                        <input class="form-control" id="datetime" type="text" placeholder="1/1/2010">
+                        <button id="filter-btn1" type="button" class="btn btn-default">Filter Table</button>
+                        <br>
+                        <br>
+                        <label for="location">Enter a City</label>
+                        <input class="form-control" id="city" type="text" placeholder="Benton">
+                        <button id="filter-btn2" type="button" class="btn btn-default">Filter Table</button>
+                        <br>
+                        <br>
+                        <label for="region">Enter a State</label>
+                        <input class="form-control" id="state" type="text" placeholder="AR">
+                        <button id="filter-btn3" type="button" class="btn btn-default">Filter Table</button>
+                        <br>
+                        <br>
+                        <label for="nation">Enter a Country</label>
+                        <input class="form-control" id="country" type="text" placeholder="us">
+                        <button id="filter-btn4" type="button" class="btn btn-default">Filter Table</button>
+                        <br>
+                        <br>
+                        <label for="location">Enter the shape</label>
+                        <input class="form-control" id="shape" type="text" placeholder="circle">
+                        <button id="filter-btn5" type="button" class="btn btn-default">Filter Table</button>
                       </li>
                     </ul>
                   </div>
-                  <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
+                 
                 </form>
               </div>
             </div>
@@ -49,19 +74,19 @@
         </div>
         <div class="col-md-10">
           <div id="table-area" class="">
-            <table id="ufo-table" class="table table-striped">
+            <table id="ufo-table" class="table table-striped sortable">
               <thead>
                 <tr>
-                  <th class="table-head">Date</th>
-                  <th class="table-head">City</th>
-                  <th class="table-head">State</th>
-                  <th class="table-head">Country</th>
-                  <th class="table-head">Shape</th>
-                  <th class="table-head">Duration</th>
-                  <th class="table-head">Comments</th>
+                  <th width="10%" class="headerSortDown" onclick="sortTable(0)">Date</th>
+                  <th width="10%" class="headerSortDown" onclick="sortTable(1)">City</th>
+                  <th width="8.5%" class="headerSortDown" onclick="sortTable(2)">State</th>
+                  <th width="8.5%" class="headerSortDown" onclick="sortTable(3)">Country</th>
+                  <th width="12%" class="headerSortDown" onclick="sortTable(4)">Shape</th>
+                  <th width="12%" class="table-head">Duration</th>
+                  <th width="39%" class="table-head">Comments</th>
                 </tr>
               </thead>
-              <tbody></tbody>
+              <tbody id="tbody"></tbody>
             </table>
           </div>
         </div>
