@@ -22,7 +22,7 @@ That's why we are hiring you. We need you to write code that will create a table
 
 5. Push the above changes to GitHub or GitLab.
 
-### Level 1: Automatic Table and Date Search (Required)
+### Level 1: Automatic Table and Date Search
 
 * Create a basic HTML web page USING the index.html file provided.
 
@@ -32,7 +32,7 @@ That's why we are hiring you. We need you to write code that will create a table
 
 * Use a date form in your HTML document and write JavaScript code that will listen for events and search through the `date/time` column to find rows that match user input.
 
-### Level 2: Multiple Search Categories (Optional)
+### Level 2: Multiple Search Categories
 
 * Complete all of Level 1 criteria.
 
